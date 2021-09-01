@@ -1,0 +1,84 @@
+.package-out {
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 0px solid black;
+	border-bottom: 0px solid black;
+	/* border-radius: 8px; */
+}
+.package-in {
+	border-left-style: solid;
+	border-left-width: 3px;
+	/* border-radius: 7px; */
+	padding: 0.25em;
+	/* background-color: white; */
+}
+.package-over {
+	border-top: 0.25em solid lightblue;
+	/* border-bottom: 0.25em solid aliceblue; */
+	padding-top: 0;
+	/* padding-bottom: 0; */
+	/* background: linear-gradient(aliceblue, white); */
+}
+.package-active-0 {
+	border-left-color: pink;
+}
+.package-active-1 {
+	border-left-color: lightgreen;
+}
+.package-name {
+	font-size: 1.5em;
+	vertical-align: top;
+}
+.package-text {
+	vertical-align: top;
+	margin-right: 0.25em;
+	/* https://stackoverflow.com/a/39939769 */
+	display: inline-flex;
+	align-items: center;
+}
+.package-details {
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 0.25em;
+	display: inline-block;
+}
+.package-conf-text {
+	vertical-align: top;
+}
+.package-conf-details {
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 0.25em;
+	display: inline-block;
+}
+.package-conf {
+	text-align: top;
+	margin-top: 0.5em;
+}
+summary {
+	cursor: default;
+}
+.package-conf-details-list > label {
+	display: flex;
+	width: 30em;
+	font-family: monospace;
+	align-items: center;
+}
+.package-conf-details-list > label > span:first-child {
+	flex: 1;
+	display: inline-block;
+	text-align: right;
+	vertical-align: middle;
+	margin-right: 0.25em;
+}
+.package-conf-details-list > label > span:last-child {
+	flex: 1;
+	display: inline-block;
+	text-align: left;
+}
+input {
+	max-width: 10em;
+}
+fieldset {
+	display: inline-block;
+}
