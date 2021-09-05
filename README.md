@@ -42,10 +42,8 @@ configuration, check the files in `test-data`.
 
 Commands to run:
 ```
-webss$ cd front-end/
-webss/front-end$ ./init.sh 
-...
-webss/front-end$ cd ../back-end/
+webss$ cd back-end/
+webss/back-end$ ./init.sh
 webss/back-end$ ./generate_webpage.py
 Webpage: file://.../webss/front-end/out/index.html
 ```
