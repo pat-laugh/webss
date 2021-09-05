@@ -23,15 +23,15 @@ A front end allows to determine what packages will be used, to generate
 configuration that can then be used by the compiler, so there is no need to
 manipulate text.
 
+You can compare files in `front-end/js-original` and `front-end/js-wbss` to see
+how this product can allow you to change the syntax of a language.
+
 ## Loading the project
 
-In the directory `front-end/`, run `init.sh` to run appropriate commands. Then
-go to the directory `back-end/`, and run `generate_webpage.py`. This will
+In the directory `back-end/`, run `init.sh` to run appropriate commands. Then
+run `generate_webpage.py`. This will
 generate a webpage showing the configuration from the file `config.json`. To
 compile a file, run `compile.py` with the file name.
-
-To check what input and output could look like with the current packages and
-configuration, check the files in `test-data`.
 
 ## Creating packages
 

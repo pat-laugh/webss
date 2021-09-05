@@ -1,5 +1,6 @@
 front-end/out/
 front-end/out-babel/
+front-end/out-wbss/
 
 ##gitignore-start:node
 # Logs

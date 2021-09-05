@@ -100,6 +100,11 @@ class State:
 		events = self.events[lang]
 		switch_state_dict = self.switch_state_dict[lang]
 		if key in events:
+			# TOOD: Improve this error message
+			# can't put self or st because it calls `repr` in the background,
+			# which can cause problems
+			# `key` should also be escaped appropriately (like newline)
+			raise Exception('duplicate start chars in one container: "%s"' % key)
 			raise Exception('key %s already in events: %s %s' % (
 				key, self, st))
 		if key in switch_state_dict:

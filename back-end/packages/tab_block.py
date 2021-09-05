@@ -1,4 +1,4 @@
-from libs.constants import lang_dict, CC_END_STATE
+from libs.constants import lang_dict, CC_END_STATE, LANG_JS
 from libs.constants import COLON, NEWLINE, INDENTATION, IGNORE, SEPARATOR
 from libs.indent import Indent
 from libs.state_container import StateContainer
@@ -20,6 +20,7 @@ class StateTabBlock(StateContainer):
 		super().conf()
 		self.separators = lang_dict([['']] * 4 + [[';']])
 		self.conf_exec_list = StateExecList()
+		self.conf_exec_list.end[LANG_JS] = '}\n'
 
 	def inst(self, parsed_start):
 		super().inst(parsed_start)
