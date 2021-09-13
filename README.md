@@ -75,6 +75,6 @@ see a slightly different result: a comma separates the numbers 2 and 3!
 
 ## Creating packages
 
-At the moment, I took the compiler code and file from another project and
-integrated this project with it, so it's a bit complicated what happens, but
-that shall be improved in the future.
+At the moment, I took the compiler code from another personal project I'd been
+working on and integrated it with this project, so it's a bit complicated what
+happens, but that shall be improved in the future.
